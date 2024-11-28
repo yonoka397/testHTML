@@ -6,20 +6,20 @@ body {
 
 .header {
 	font-family: 'Itim', cursive; /* 標題區域使用 Itim */
-	font-size: clamp(23px, 4vw, 50px);
+	font-size: clamp(26px, 4vw, 50px);
 }
 
 .drop-zone {
 	border: 2px dashed #ccc;
 	border-radius: 10px;
-	width: clamp(200px, 50%, 600px); /* 最小200px，最大300px，預設50% */
-    height: clamp(120px, 30vw, 400px); /* 高度根據視窗寬度動態調整 */
+	width: clamp(300px, 50%, 600px); /* 最小200px，最大300px，預設50% */
+    height: clamp(200px, 30vw, 400px); /* 高度根據視窗寬度動態調整 */
 	margin: 20px auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #aaa;
-	font-size: clamp(16px, 2.7vw, 40px);
+	font-size: clamp(22px, 2.7vw, 40px);
 }
 
 .drop-zone.dragover {
@@ -39,7 +39,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	color: #666;
-	font-size: clamp(15px, 2.7vw, 40px);
+	font-size: clamp(22px, 2.7vw, 40px);
 	
 }
 

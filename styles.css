@@ -71,7 +71,7 @@ body {
 .upload_success_text {
 	font-family: 'Gamja Flower', cursive;
 	margin-top: 20px;
-	font-size: clamp(30px, 3vw, 50px);
+	font-size: clamp(30px, 3vw, 40px);
 }
 
 .preview {
@@ -85,4 +85,20 @@ body {
 	max-height:300px;
 	margin: 10px auto;
 	display: block;
+}
+
+
+
+/* animation of website */
+.drop-zone,
+.button_image_upload {
+	transition: all 0.5s ease;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.hidden {
+	opacity: 0;
+	transform: translateY(-300px);
+	pointer-events: none;
 }

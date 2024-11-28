@@ -56,9 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 		
 		if (validFileFound) {
-			dropZone.style.display = "none";
-			button.style.display = "none";
-			file_upload_text.style.display = "block";
+			dropZone.classList.add("hidden");
+			button.classList.add("hidden");
+			
+			setTimeout(() => {
+				dropZone.style.display = "none";
+				button.style.display = "none";
+				file_upload_text.style.display = "block";
+			}, 1000);
 		}
     }
 });

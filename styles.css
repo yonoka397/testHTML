@@ -13,7 +13,7 @@ body {
 	padding-top: 20px;
 }
 
-.sub_title {
+.sub-title {
 	font-family: 'Itim', cursive; /* 標題區域使用 Itim */
 	font-size: clamp(10px, 1.5vw, 15px);
 	display: flex;
@@ -40,7 +40,7 @@ body {
 	color: #333;
 }
 
-.button_image_upload {
+.button-image-upload {
 	padding: 0px 10px;
 	border: 4px outset #999;
 	border-radius: 10px;
@@ -55,20 +55,20 @@ body {
 	font-size: clamp(26px, 2.7vw, 40px);
 }
 
-.button_image_upload:hover {
+.button-image-upload:hover {
 	color: #888;
 	background-color: #DDD;
 	border-color: #BBB;
 }
 
-.button_image_upload:active {
+.button-image-upload:active {
 	color: #AAA;
 	background-color: #EEE;
 	border-color: #EEE;
 	transform: scale(0.98); /* 按下时缩小 */
 }
 
-.upload_success_text {
+.upload-success-text {
 	font-family: 'Gamja Flower', cursive;
 	margin-top: 20px;
 	font-size: clamp(30px, 3vw, 40px);
@@ -91,7 +91,7 @@ body {
 
 /* animation of website */
 .drop-zone,
-.button_image_upload {
+.button-image-upload {
 	transition: all 0.5s ease;
 	opacity: 1;
 	transform: translateY(0);

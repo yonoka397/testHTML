@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dropZone = document.getElementById("drop-zone");
-	const button = document.getElementById("button_image_upload");
-	const file_input = document.getElementById("file_input");
-	const file_upload_text = document.getElementById("upload_success_text");
+	const button = document.getElementById("button-image-upload");
+	const file_input = document.getElementById("file-input");
+	const file_upload_text = document.getElementById("upload-success-text");
     const preview = document.getElementById("preview");
 
     // 阻止瀏覽器的默認行為（打開文件）

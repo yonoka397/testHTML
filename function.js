@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dropZone = document.getElementById("drop-zone");
+	const button = document.getElementById("button_image_upload");
+	const file_input = document.getElementById("file_input");
     const preview = document.getElementById("preview");
 
     // 阻止瀏覽器的默認行為（打開文件）
@@ -23,6 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const files = e.dataTransfer.files;
         handleFiles(files);
     });
+	
+	button.addEventListener("click", () => {
+		file_input.click();
+	});
+	
+	file_input.addEventListener("change", () => {
+		const files = file_input.files;
+		handleFiles(files);
+	});
 
     // 處理文件上傳
     function handleFiles(files) {

@@ -30,21 +30,30 @@ body {
 
 .button_image_upload {
 	padding: 0px 10px;
-	border: 2px ridge #666;
-	border-radius: 5px;
+	border: 4px outset #999;
+	border-radius: 10px;
 	width: fit-content;
 	height: fit-content;
 	margin: 5px auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #666;
+	color: #444;
+	background-color: #CCC;
 	font-size: clamp(26px, 2.7vw, 40px);
 }
 
 .button_image_upload:hover {
-	background-color: #0056b3;
-	border-color: #004494;
+	color: #888;
+	background-color: #DDD;
+	border-color: #BBB;
+}
+
+.button_image_upload:active {
+	color: #AAA;
+	background-color: #EEE;
+	border-color: #EEE;
+	transform: scale(0.98); /* 按下时缩小 */
 }
 
 .preview {

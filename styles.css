@@ -74,6 +74,34 @@ body {
 	font-size: clamp(30px, 3vw, 40px);
 }
 
+.button-image-reupload {
+	padding: 0px 10px;
+	border: 4px outset #999;
+	border-radius: 10px;
+	width: fit-content;
+	height: fit-content;
+	margin: 5px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #444;
+	background-color: #CCC;
+	font-size: clamp(26px, 2.5vw, 40px);
+}
+
+.button-image-reupload:hover {
+	color: #888;
+	background-color: #DDD;
+	border-color: #BBB;
+}
+
+.button-image-reupload:active {
+	color: #AAA;
+	background-color: #EEE;
+	border-color: #EEE;
+	transform: scale(0.98); /* 按下时缩小 */
+}
+
 .preview {
 	font-family: 'Gamja Flower', cursive; /* 預覽區域仍然使用 Gamja Flower */
 	margin-top: 50px;
@@ -81,8 +109,8 @@ body {
 }
 
 .preview img {
-	max-width: 300px;
-	max-height:300px;
+	width: clamp(200px, 50%, 300px);
+	height: clamp(200px, 50%, 300px);
 	margin: 10px auto;
 	display: block;
 }
@@ -90,15 +118,30 @@ body {
 
 
 /* animation of website */
-.drop-zone,
-.button-image-upload {
-	transition: all 0.5s ease;
-	opacity: 1;
-	transform: translateY(0);
+.upload-container {
+    transition: all 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.hidden {
-	opacity: 0;
-	transform: translateY(-300px);
-	pointer-events: none;
+.upload-container.hidden {
+    opacity: 0;
+    transform: translateY(-300px);
+    pointer-events: none;
+}
+
+.upload-sucess-container {
+    transition: all 1.0s ease; /* 平滑过渡 */
+    opacity: 0; /* 初始透明度 */
+    transform: translateY(-20px); /* 初始位移：向下20px */
+}
+
+.upload-sucess-container.show {
+    opacity: 1; /* 完全显示 */
+    transform: translateY(0); /* 位移归零 */
+}
+
+.preview {
+    transition: transform 1.0s ease; /* 平滑过渡效果 */
+    transform: translateY(0); /* 默认位置 */
 }

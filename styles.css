@@ -7,6 +7,18 @@ body {
 .header {
 	font-family: 'Itim', cursive; /* 標題區域使用 Itim */
 	font-size: clamp(30px, 4.3vw, 50px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.sub_title {
+	font-family: 'Itim', cursive; /* 標題區域使用 Itim */
+	font-size: clamp(10px, 1.5vw, 15px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .drop-zone {
@@ -56,6 +68,12 @@ body {
 	transform: scale(0.98); /* 按下时缩小 */
 }
 
+.upload_success_text {
+	font-family: 'Gamja Flower', cursive;
+	margin-top: 20px;
+	font-size: clamp(30px, 3vw, 50px);
+}
+
 .preview {
 	font-family: 'Gamja Flower', cursive; /* 預覽區域仍然使用 Gamja Flower */
 	margin-top: 50px;
@@ -63,8 +81,7 @@ body {
 }
 
 .preview img {
-	//width: clamp(300px, 50%, 600px);
-	max-height: 300px;
+	max-width: 300px;
 	margin: 10px auto;
 	display: block;
 }

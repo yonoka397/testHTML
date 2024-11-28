@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropZone = document.getElementById("drop-zone");
 	const button = document.getElementById("button_image_upload");
 	const file_input = document.getElementById("file_input");
+	const file_upload_text = document.getElementById("upload_success_text");
     const preview = document.getElementById("preview");
 
     // 阻止瀏覽器的默認行為（打開文件）
@@ -37,8 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 處理文件上傳
     function handleFiles(files) {
+		let validFileFound = false;
         [...files].forEach(file => {
             if (file.type.startsWith("image/")) {
+				validFileFound = true;
                 const reader = new FileReader();
                 reader.onload = () => {
                     const img = document.createElement("img");
@@ -51,6 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("Unsupport image format");
             }
         });
+		
+		if (validFileFound) {
+			dropZone.style.display = "none";
+			button.style.display = "none";
+			file_upload_text.style.display = "block";
+		}
     }
 });
 

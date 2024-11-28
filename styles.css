@@ -59,12 +59,12 @@ body {
 .preview {
 	font-family: 'Gamja Flower', cursive; /* 預覽區域仍然使用 Gamja Flower */
 	margin-top: 50px;
-	font-size: 30px;
+	font-size: clamp(30px, 3vw, 50px);
 }
 
 .preview img {
-	max-width: 100%;
-	max-height: 400px;
+	//width: clamp(300px, 50%, 600px);
+	max-height: 300px;
 	margin: 10px auto;
 	display: block;
 }

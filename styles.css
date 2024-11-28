@@ -1,24 +1,25 @@
 body {
 	font-family: 'Gamja Flower', cursive; /* 預設整個頁面使用 Gamja Flower */
 	text-align: center;
-	padding: 20px;
+	padding: 10px;
 }
 
 .header {
 	font-family: 'Itim', cursive; /* 標題區域使用 Itim */
+	font-size: clamp(23px, 4vw, 50px);
 }
 
 .drop-zone {
 	border: 2px dashed #ccc;
 	border-radius: 10px;
-	width: 300px;
-	height: 200px;
+	width: clamp(200px, 50%, 600px); /* 最小200px，最大300px，預設50% */
+    height: clamp(120px, 30vw, 400px); /* 高度根據視窗寬度動態調整 */
 	margin: 20px auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #aaa;
-	font-size: 16px;
+	font-size: clamp(16px, 2.7vw, 40px);
 }
 
 .drop-zone.dragover {
@@ -27,14 +28,32 @@ body {
 	color: #333;
 }
 
+.button_image_upload {
+	padding: 0px 10px;
+	border: 2px ridge #666;
+	border-radius: 5px;
+	width: fit-content;
+	height: fit-content;
+	margin: 5px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #666;
+	font-size: clamp(15px, 2.7vw, 40px);
+	
+}
+
+.button_image_upload.touch {
+	color: #000;
+}
+
 .preview {
 	font-family: 'Gamja Flower', cursive; /* 預覽區域仍然使用 Gamja Flower */
-	margin-top: 20px;
+	margin-top: 50px;
 	font-size: 30px;
 }
 
 .preview img {
-	// min-width: 100%;
 	max-width: 100%;
 	max-height: 400px;
 	margin: 10px auto;

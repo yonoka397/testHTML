@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 reader.readAsDataURL(file);
 				//uploadFile(file);
             } else {
-                alert("Only image files are allowed!");
+                alert("Unsupport image format");
             }
         });
     }

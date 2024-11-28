@@ -82,6 +82,7 @@ body {
 
 .preview img {
 	max-width: 300px;
+	max-height:300px;
 	margin: 10px auto;
 	display: block;
 }

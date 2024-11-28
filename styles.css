@@ -15,7 +15,7 @@ body {
 
 .sub-title {
 	font-family: 'Itim', cursive; /* 標題區域使用 Itim */
-	font-size: clamp(10px, 1.5vw, 15px);
+	font-size: clamp(15px, 1.5vw, 20px);
 	display: flex;
 	justify-content: center;
 	align-items: center;

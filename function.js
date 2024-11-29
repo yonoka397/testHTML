@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	file_input.addEventListener("change", () => {
 		const files = file_input.files;
 		handleFiles(files);
+		
+		file_input.value = "";
 	});
 	
 	button_image_reupload.addEventListener("click", () => {
